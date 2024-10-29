@@ -13,13 +13,15 @@
     </style>
 </head>
 <body>
-    <div id="field" onclick="showCoord(event)"></div>
+    <div id="field" onclick="createZombie(event)"></div>
     <script>
-        let field=document.get.ElementByld('field');
+        let field=document.getElementById('field');
         function showCoord(event){
             console.log(event.clientX+':'+event.clientY);
         }
-        let zombie = document.createElement("img");
+       
+        function createZombie(event){
+            let zombie = document.createElement("img");
         zombie.src = "11.gif";
         document.body.append(zombie);
         
@@ -44,6 +46,7 @@
            
         }
         setInterval(moveZomdie, 1);
+        }
     </script>   
 </body>
 </html>
